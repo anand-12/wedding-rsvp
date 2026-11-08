@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#fbf6ee">
+  <meta name="rsvp-api" content="">
+  <title>Anand &amp; Disha · December 2026</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the invitation</a>
+  <header class="masthead">
+    <a class="monogram" href="#main" aria-label="Anand and Disha home">A<span>&amp;</span>D</a>
+    <nav aria-label="Wedding website"><a href="#celebrations">Celebrations</a><a class="nav-rsvp" href="#rsvp">RSVP <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <div class="flight-lane" aria-hidden="true">
+    <svg class="flamingo-flight" viewBox="0 0 180 77" focusable="false" hidden>
+      <defs>
+        <g id="flying-body">
+          <path d="M31 38 2 43m30-3L6 47" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M25 37c7-8 17-9 24-5 8 5 1 12-10 12-6 0-10-3-14-7Z" fill="currentColor"/>
+          <path d="M47 36c8-2 11-8 24-9" fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="round"/>
+          <ellipse cx="73" cy="27" rx="4.6" ry="3.3" fill="currentColor"/>
+          <path d="M76 26q7 0 4 5l-2 1 1-3-3-1Z" fill="#45433e"/>
+          <circle cx="74" cy="26" r=".7" fill="#45433e"/>
+        </g>
+        <path id="flying-far-wing" d="M42 37C38 25 48 14 62 12c-3 8-5 18-16 25Z"/>
+        <path id="flying-near-wing" d="M42 36C29 30 22 19 19 11c11 2 22 8 27 16 2 4 0 8-4 9Z"/>
+        <path id="flying-feathers" d="M19 11c6 1 12 4 17 8l-6 7c-5-4-9-10-11-15Z"/>
+      </defs>
+      <g class="flight-bird" transform="translate(1 15) scale(.89)">
+        <g class="flight-wing far-wing"><use href="#flying-far-wing"/></g>
+        <use href="#flying-body"/>
+        <g class="flight-wing"><use href="#flying-near-wing"/><use class="flight-feathers" href="#flying-feathers"/></g>
+      </g>
+      <g class="flight-bird flight-lead" transform="translate(87 0)">
+        <g class="flight-wing far-wing"><use href="#flying-far-wing"/></g>
+        <use href="#flying-body"/>
+        <g class="flight-wing"><use href="#flying-near-wing"/><use class="flight-feathers" href="#flying-feathers"/></g>
+      </g>
+    </svg>
+  </div>
+  <main class="layout" id="main">
+    <section class="intro" aria-labelledby="names">
+      <p class="eyebrow">Kolkata · Navi Mumbai</p>
+      <h1 id="names">Anand <span>&amp;</span> Disha</h1>
+      <p class="invitation">Together with our families, we’d love for you to celebrate our wedding with us.</p>
+      <p class="dates"><span></span>20 &amp; 25 December 2026<span></span></p>
+      <a class="button" href="#rsvp">Kindly RSVP <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="events" id="celebrations" aria-labelledby="events-title">
+      <h2 id="events-title">Celebrations</h2>
+      <div class="event-grid">
+        <article class="event-card">
+          <p class="eyebrow">Kolkata</p>
+          <h3>Wedding ceremony</h3>
+          <p class="event-date"><time datetime="2026-12-20T17:30:00+05:30">Sunday, 20 December 2026<br>5:30 PM onwards</time></p>
+          <address><strong>Ekansh Banquet Hall</strong><br>
+            1st Floor, 16F, Barrackpore Trunk Road<br>
+            Jaiprakash Nagar, Sodepur, Sukhchar<br>
+            Kolkata, West Bengal 700115
+          </address>
+          <a class="directions" href="https://www.google.com/maps/search/?api=1&amp;query=Ekansh%20Banquet%20Hall%2C%20Barrackpore%20Trunk%20Road%2C%20Sodepur%2C%20Kolkata%20700115">Directions to the ceremony <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="event-card">
+          <p class="eyebrow">Navi Mumbai</p>
+          <h3>Reception</h3>
+          <p class="event-date"><time datetime="2026-12-25T19:30:00+05:30">Friday, 25 December 2026<br>7:30 PM onwards</time></p>
+          <address><strong>Courtyard by Marriott</strong><br>
+            Sector 7, Nerul, Navi Mumbai<br>
+            Maharashtra 400706<br>
+            Near D. Y. Patil Stadium
+          </address>
+          <a class="directions" href="https://www.google.com/maps/search/?api=1&amp;query=Courtyard%20by%20Marriott%20Navi%20Mumbai%2C%20Sector%207%2C%20Nerul%20400706">Directions to the reception <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="rsvp" id="rsvp" aria-labelledby="rsvp-title">
+      <h2 id="rsvp-title">RSVP</h2>
+      <p class="rsvp-note">We’d love to hear from you by <time datetime="2026-12-06">6 December 2026</time>. One reply per household is plenty.</p>
+      <form id="reply">
+        <label class="name-label" for="household">Your name or household name</label>
+        <input id="household" name="household" autocomplete="name" maxlength="100" required>
+        <div class="attendance">
+          <fieldset data-event="ceremony">
+            <legend>Kolkata ceremony <small>20 December</small></legend>
+            <label class="choice"><input type="radio" name="ceremony" value="yes" required> Joyfully accepts</label>
+            <label class="choice"><input type="radio" name="ceremony" value="no"> Regretfully declines</label>
+            <div class="guest-details" hidden>
+              <label for="ceremony-count">Number attending, including you</label>
+              <input id="ceremony-count" name="ceremonyCount" type="number" min="1" step="1" inputmode="numeric" disabled>
+              <label for="ceremony-guests">Names of everyone attending</label>
+              <textarea id="ceremony-guests" name="ceremonyGuests" rows="2" maxlength="600" placeholder="One name per line" disabled></textarea>
+            </div>
+          </fieldset>
+          <fieldset data-event="reception">
+            <legend>Navi Mumbai reception <small>25 December</small></legend>
+            <label class="choice"><input type="radio" name="reception" value="yes" required> Joyfully accepts</label>
+            <label class="choice"><input type="radio" name="reception" value="no"> Regretfully declines</label>
+            <div class="guest-details" hidden>
+              <label for="reception-count">Number attending, including you</label>
+              <input id="reception-count" name="receptionCount" type="number" min="1" step="1" inputmode="numeric" disabled>
+              <label for="reception-guests">Names of everyone attending</label>
+              <textarea id="reception-guests" name="receptionGuests" rows="2" maxlength="600" placeholder="One name per line" disabled></textarea>
+            </div>
+          </fieldset>
+        </div>
+        <div class="guest-notes">
+          <label for="dietary">Dietary restrictions or food allergies <span>(optional)</span></label>
+          <textarea id="dietary" name="dietary" rows="2" maxlength="500" placeholder="For example, vegetarian meals or a nut allergy. Please include the guest’s name."></textarea>
+          <label for="accommodations">Accessibility or other accommodation requests <span>(optional)</span></label>
+          <textarea id="accommodations" name="accommodations" rows="2" maxlength="500" placeholder="For example, step-free access or seating needs. Let us know which event if relevant."></textarea>
+        </div>
+        <div class="trap" aria-hidden="true" inert><input name="website" tabindex="-1" autocomplete="off"></div>
+        <button class="button" type="submit">Send our RSVP <span aria-hidden="true">↗</span></button>
+        <p id="reply-status" role="status" aria-live="polite" tabindex="-1"></p>
+      </form>
+      <noscript><p>Enable JavaScript to send your RSVP from this page.</p></noscript>
+    </section>
+  </main>
+  <footer>With love, <span>Anand &amp; Disha</span></footer>
+</body>
+</html>
