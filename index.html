@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
   <meta name="theme-color" content="#fbf6ee">
-  <meta name="rsvp-api" content="">
   <title>Anand &amp; Disha · December 2026</title>
   <link rel="stylesheet" href="styles.css">
   <script src="site.js" defer></script>
@@ -83,44 +82,11 @@
     <section class="rsvp" id="rsvp" aria-labelledby="rsvp-title">
       <h2 id="rsvp-title">RSVP</h2>
       <p class="rsvp-note">We’d love to hear from you by <time datetime="2026-12-06">6 December 2026</time>. One reply per household is plenty.</p>
-      <form id="reply">
-        <label class="name-label" for="household">Your name or household name</label>
-        <input id="household" name="household" autocomplete="name" maxlength="100" required>
-        <div class="attendance">
-          <fieldset data-event="ceremony">
-            <legend>Kolkata ceremony <small>20 December</small></legend>
-            <label class="choice"><input type="radio" name="ceremony" value="yes" required> Joyfully accepts</label>
-            <label class="choice"><input type="radio" name="ceremony" value="no"> Regretfully declines</label>
-            <div class="guest-details" hidden>
-              <label for="ceremony-count">Number attending, including you</label>
-              <input id="ceremony-count" name="ceremonyCount" type="number" min="1" step="1" inputmode="numeric" disabled>
-              <label for="ceremony-guests">Names of everyone attending</label>
-              <textarea id="ceremony-guests" name="ceremonyGuests" rows="2" maxlength="600" placeholder="One name per line" disabled></textarea>
-            </div>
-          </fieldset>
-          <fieldset data-event="reception">
-            <legend>Navi Mumbai reception <small>25 December</small></legend>
-            <label class="choice"><input type="radio" name="reception" value="yes" required> Joyfully accepts</label>
-            <label class="choice"><input type="radio" name="reception" value="no"> Regretfully declines</label>
-            <div class="guest-details" hidden>
-              <label for="reception-count">Number attending, including you</label>
-              <input id="reception-count" name="receptionCount" type="number" min="1" step="1" inputmode="numeric" disabled>
-              <label for="reception-guests">Names of everyone attending</label>
-              <textarea id="reception-guests" name="receptionGuests" rows="2" maxlength="600" placeholder="One name per line" disabled></textarea>
-            </div>
-          </fieldset>
-        </div>
-        <div class="guest-notes">
-          <label for="dietary">Dietary restrictions or food allergies <span>(optional)</span></label>
-          <textarea id="dietary" name="dietary" rows="2" maxlength="500" placeholder="For example, vegetarian meals or a nut allergy. Please include the guest’s name."></textarea>
-          <label for="accommodations">Accessibility or other accommodation requests <span>(optional)</span></label>
-          <textarea id="accommodations" name="accommodations" rows="2" maxlength="500" placeholder="For example, step-free access or seating needs. Let us know which event if relevant."></textarea>
-        </div>
-        <div class="trap" aria-hidden="true" inert><input name="website" tabindex="-1" autocomplete="off"></div>
-        <button class="button" type="submit">Send our RSVP <span aria-hidden="true">↗</span></button>
-        <p id="reply-status" role="status" aria-live="polite" tabindex="-1"></p>
-      </form>
-      <noscript><p>Enable JavaScript to send your RSVP from this page.</p></noscript>
+      <p class="rsvp-fallback"><a href="https://docs.google.com/forms/d/e/1FAIpQLSelxrEq0owN5tirKFwhWbEjd00ygH-tFq2aEd6peaVhcBEwUg/viewform" target="_blank" rel="noopener">Open the RSVP form in a new tab <span aria-hidden="true">↗</span></a></p>
+      <iframe class="rsvp-embed"
+        title="Anand and Disha wedding RSVP"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSelxrEq0owN5tirKFwhWbEjd00ygH-tFq2aEd6peaVhcBEwUg/viewform?embedded=true"
+        loading="lazy"></iframe>
     </section>
   </main>
   <footer>With love, <span>Anand &amp; Disha</span></footer>
